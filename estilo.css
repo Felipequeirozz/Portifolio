@@ -1,0 +1,310 @@
+
+/* Configurações gerais */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    padding-top: 70px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+section {
+    padding: 70px 0 !important;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: bold;
+}
+
+h2 {
+    color: #212529;
+    margin-bottom: 35px !important;
+}
+
+/* Menu */
+
+.navbar {
+    background-color: #17212f !important;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+    font-size: 22px;
+}
+
+.nav-link {
+    transition: 0.3s;
+    margin-left: 8px;
+}
+
+.nav-link:hover {
+    color: #66a3ff !important;
+    transform: translateY(-2px);
+}
+
+/* Perfil */
+
+#perfil {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #ffffff, #edf4ff);
+}
+
+#perfil .container {
+    animation: aparecer 1s ease-out;
+}
+
+#perfil h1 {
+    color: #17212f;
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+#perfil h4 {
+    font-size: 21px;
+}
+
+#perfil p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Foto de perfil */
+
+.foto-perfil {
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    border: 5px solid #0d6efd;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 8px 25px rgba(13, 110, 253, 0.2);
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(13, 110, 253, 0.3);
+}
+
+/* Animação */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Habilidades */
+
+#habilidades {
+    background-color: #f5f7fa;
+}
+
+#habilidades h5 {
+    font-size: 17px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+#habilidades h5 i {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.progress {
+    height: 16px;
+    border-radius: 20px;
+    background-color: #dce3ec;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, #0d6efd, #4b9aff);
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* Projetos */
+
+#projetos {
+    background-color: #ffffff;
+}
+
+.card-projeto {
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-projeto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.13);
+}
+
+.card-projeto .card-body {
+    padding: 25px;
+}
+
+.card-title {
+    color: #0d6efd;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    color: #555;
+    min-height: 75px;
+}
+
+.card-projeto .fs-1 {
+    font-size: 42px !important;
+}
+
+.card-projeto button,
+.card-projeto a {
+    transition: 0.3s;
+}
+
+.card-projeto button:hover,
+.card-projeto a.btn:hover {
+    transform: translateY(-2px);
+}
+
+.card-projeto .collapse {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.card-projeto .collapse p {
+    margin-bottom: 10px;
+}
+
+/* Contato */
+
+#contato {
+    background-color: #f5f7fa;
+}
+
+#contato p {
+    color: #555;
+}
+
+#contato .btn {
+    min-width: 145px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#contato .btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Botões */
+
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+/* Rodapé */
+
+footer {
+    background-color: #17212f;
+    color: #ffffff;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Seleção de texto */
+
+::selection {
+    background-color: #0d6efd;
+    color: #ffffff;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 65px;
+    }
+
+    section {
+        padding: 50px 0 !important;
+    }
+
+    #perfil {
+        text-align: center;
+    }
+
+    #perfil h1 {
+        font-size: 29px;
+    }
+
+    #perfil h4 {
+        font-size: 18px;
+    }
+
+    .foto-perfil {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .navbar-nav {
+        padding-top: 10px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+
+    .card-projeto .card-body {
+        padding: 20px;
+    }
+
+    .card-text {
+        min-height: auto;
+    }
+}
+
+/* Acessibilidade */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+
+}
